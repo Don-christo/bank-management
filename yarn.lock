@@ -157,6 +157,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/uuid@npm:^9.0.3":
+  version: 9.0.3
+  resolution: "@types/uuid@npm:9.0.3"
+  checksum: a5357c644754ce647380b80a961cfc6dcab97561a1e6f6182d68dabb8b0befa0d5e741086fe016a783960159cbe85bb4d10b37dc2d81edb29577b5d649ace080
+  languageName: node
+  linkType: hard
+
 "Bank Account Management@workspace:.":
   version: 0.0.0-use.local
   resolution: "Bank Account Management@workspace:."
@@ -164,11 +171,13 @@ __metadata:
     "@types/body-parser": "npm:^1.19.2"
     "@types/express": "npm:^4.17.17"
     "@types/typescript": "npm:^2.0.0"
+    "@types/uuid": "npm:^9.0.3"
     body-parser: "npm:^1.20.2"
     dotenv: "npm:^16.3.1"
     express: "npm:^4.18.2"
     nodemon: "npm:^3.0.1"
     typescript: "npm:^5.2.2"
+    uuid: "npm:^9.0.0"
   languageName: unknown
   linkType: soft
 
@@ -1919,6 +1928,15 @@ __metadata:
   version: 1.0.1
   resolution: "utils-merge@npm:1.0.1"
   checksum: b72b8d7a0f7d63a9b1ced39a44b292994111c93cf9c4da8a561e4fe0d0232af7217a53d5aae3a950fb7ab6f423baf3e0d2d7c7c33dd6c4ec78d0a3c720ee6adb
+  languageName: node
+  linkType: hard
+
+"uuid@npm:^9.0.0":
+  version: 9.0.0
+  resolution: "uuid@npm:9.0.0"
+  bin:
+    uuid: dist/bin/uuid
+  checksum: e1f76aff372e430bb129157360fd4cd3b393411b245604ea78e178a822ab7874ec2ebecec03ce94422b0b80bbd24733c6fa1df166c9cbad5086ef4b4843140bb
   languageName: node
   linkType: hard
 
