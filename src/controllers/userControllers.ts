@@ -98,7 +98,8 @@ export const createAccount = async (
 };
 
 export const getAccount = (req: Request, res: Response) => {
-  const { accountNumber }  = req.params
+  try {
+    const { accountNumber }  = req.params
 
   let bankAccounts: any[] = [];
   const data = fs.readFileSync(bankFile, "utf-8");
@@ -118,4 +119,26 @@ export const getAccount = (req: Request, res: Response) => {
     message: `Your account is found successfully`,
     data: account
   });
+  }catch(err) {
+    res.status(500).json({
+        message: `Error getting account`,
+        error: err
+    })
+  }
 };
+
+export const getAllAccounts = (req: Request, res: Response) => {
+    try{
+        const infos = fs.readFileSync(bankFile, "utf8");
+        const bankAccounts = JSON.parse(infos);
+        return res.status(200).json({
+            message: `All Bank accounts have been fetched successfully`,
+            bankAccounts
+        });
+    }catch(err) {
+        res.status(500).json({
+            message: `Failed to get all accounts`,
+            error: err
+        })
+    }
+}

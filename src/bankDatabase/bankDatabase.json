@@ -5,5 +5,12 @@
     "dob": "8/11/1998",
     "accountType": "savings",
     "initialAccountBalance": "80000"
+  },
+  {
+    "accountNumber": "3195448087",
+    "accountName": "Simon",
+    "dob": "8/11/1998",
+    "accountType": "current",
+    "initialAccountBalance": "10000"
   }
 ]
